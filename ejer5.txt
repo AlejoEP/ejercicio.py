@@ -1,0 +1,34 @@
+Ejercicio 5:
+Nos contratan para realizar un sistema para un kiosco. De cada artículo se conoce
+código, nombre, una descripción, el precio de venta, el nombre del proveedor y si es
+necesaria la refrigeración del artículo (pudiendo ser R=requiere frío o N=no requiere frío).
+
+a) Realice una función que cree una lista con información de artículos de kiosco. La
+carga de artículos finaliza cuando se ingresa un artículo cuyo código = “999” y que
+a la vez no requiera frío.
+
+b) Realice una función que cree una lista con los datos del stock, donde de cada
+articulo se conoce el código y la cantidad existente.
+
+c) Se requiere imprimir los datos de todos los artículos que necesitan refrigeración o
+los artículos que no la necesitan, dependiendo del valor ingresado por el usuario
+(R=requiere frío o N=no requiere frío).
+
+d) Se necesita imprimir la cantidad de artículos que necesitan refrigeración y la
+cantidad de artículos que no la necesitan.
+
+e) Se requiere imprimir los datos de los artículos cuyo stock es 0, de la siguiente
+manera: Código, nombre del artículo, y nombre del proveedor.
+
+f) Realice una función que utilizando la lista de productos creada en a) y en b) genere
+una nueva lista con la información completa de los artículos que no requieren frío,
+indicando además la cantidad existente.
+
+Construir un menú, el menú deberá permitir ingresar 5 opciones, La opción 0 permite salir
+del menú, el resto de las opciones permiten:
+- imprimir los datos de los artículos que necesitan o no refrigeración, dependiendo
+del valor ingresado por el usuario
+- imprimir la cantidad de artículos que precisan refrigeración
+- imprimir la cantidad de artículos que no requieren refrigeración
+- imprimir los datos de los artículos cuyo stock es 0
+- imprimir la información completa de los artículos que no requieren frío.
