@@ -14,7 +14,7 @@ def carga_de_articulos_kiosco(): #(punto A)
     return lista_articulos
 
 #Imprime los datos de todos los articulos que necesitan refrigeracion o los que no la necesitan.(punto C)
-def info_refrigeracion(lista):
+def informacion_de_refrigeracion(lista):
     if len(lista)>0:
         consulta_refrigeracion = input("Para obtener datos de los articulos con refrigeracion ingrese R, caso contrario N: ")[0]
         for articulo in lista:
