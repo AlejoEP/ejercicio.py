@@ -46,7 +46,6 @@ def cantidad_refrigeracion(lista):
         pass
 
 art = carga_de_articulos_kiosco()
-print(art)
 info_refrigeracion(art)
 cantidad_refrigeracion(art)
         
