@@ -13,6 +13,28 @@ def carga_de_articulos_kiosco(): #(punto A)
         refrigeracion = input("Refrigeracion(en caso de que el articulo necesite refrigeracion ingrese 'R', caso contrario 'N'): ")[0]
     return lista_articulos
 
+def crear_lista_stock():
+    datos_stock = {}
+    bandera = True
+    
+    while bandera:        
+        codigo_articulo = input("Ingrese el codigo del articulo: ")
+        cantidad_articulo = input("Ingrese la cantidad del articulo: ")
+        datos_stock["Codigo"] = codigo_articulo
+        datos_stock["Cantidad"] = cantidad_articulo
+        
+        
+        confirmacion = input("Desea seguir cargando datos?(s/n): ")[0]
+        
+        if confirmacion.lower() == "s":
+            bandera = True
+        elif confirmacion.lower()=="n":
+            bandera = False
+        else:
+            print("Opcion incorrecta.")
+        
+    return datos_stock
+            
 #Imprime los datos de todos los articulos que necesitan refrigeracion o los que no la necesitan.(punto C)
 def informacion_de_refrigeracion(lista):
     if len(lista)>0:
@@ -24,7 +46,6 @@ def informacion_de_refrigeracion(lista):
                 print(articulo)
     else:
         pass
-
 #Imprime la cantidad de articulos que necesitan refrigeracion y tambien la cantidad de las que no la necesitan.(punto D)
 def cantidad_refrigeracion(lista):
     if len(lista)>0:
@@ -47,6 +68,9 @@ def cantidad_refrigeracion(lista):
 
 art = carga_de_articulos_kiosco()
 print(art)
+
+print(crear_lista_stock())
+
 informacion_de_refrigeracion(art)
 cantidad_refrigeracion(art)
         
